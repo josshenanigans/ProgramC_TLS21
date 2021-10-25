@@ -1,0 +1,22 @@
+#include <stdio.h>
+float kidal, mulai;
+
+int main()
+{
+    printf("Masih bingung antara kanan atau kiri? ");
+    printf("Ketik 1 jika ingin dibantu, 0 jika tidak.");
+    scanf("%f", &mulai);
+
+    if(mulai==1) {
+        printf("Apakah kamu kidal? Ketik 1 jika ya, 0 jika tidak.");
+        scanf("%g", &kidal);
+        if(kidal==1){
+            printf("Kanan adalah tangan yang tidak kamu pakai untuk menulis.");
+        }
+            else printf("Kanan adalah tangan yang kamu pakai untuk menulis.");
+    }
+    else
+        printf("Baik, sampai bertemu di kala kamu bingung!");
+    
+    return 0;
+}
